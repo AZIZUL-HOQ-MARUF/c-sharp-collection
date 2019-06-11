@@ -9,16 +9,24 @@ namespace CollectionApp
         {
             Console.WriteLine("Printing List Values");
             usingList();
+            
             Console.WriteLine("\nPrinting SortedList Key and Values");
             usingSortedList();
+
             Console.WriteLine("\nPrinting Hashset Values");
             usingHashSet();
+
             Console.WriteLine("\nPrinting Sortedset Values");
             usingSortedSet();
+
             Console.WriteLine("\nPrinting Stack Values");
             usingStack();
+
             Console.WriteLine("\nPrinting Queue Values");
             usingQueue();
+
+            Console.WriteLine("\nPrinting LinkedList Values");
+            usingLinkedList();
 
         }
 
@@ -124,6 +132,35 @@ namespace CollectionApp
             Console.WriteLine("First name to deQueue : " + queue.Dequeue());
             Console.WriteLine("Second name to peek : " + queue.Peek());
             Console.WriteLine("Second name to deQueue : " + queue.Dequeue());
+        }
+
+        static void usingLinkedList()
+        {
+            //allows duplicate
+            //adds value node wise
+            LinkedList<string> linkedList = new LinkedList<string>();
+
+            linkedList.AddLast("Maruf");
+            linkedList.AddLast("Peter");
+            linkedList.AddLast("John");
+            linkedList.AddLast("Abdullah");
+            linkedList.AddFirst("Joseph");
+
+            foreach (string names in linkedList)
+            {
+                Console.WriteLine(names);
+            }
+            Console.WriteLine("\nCreating New Node in Linked List");
+
+            LinkedListNode<string> node = linkedList.Find("John");
+            linkedList.AddBefore(node, "David");
+            linkedList.AddAfter(node, "Harley");
+
+            foreach (string names in linkedList)
+            {
+                Console.WriteLine(names);
+            }
+
 
         }
     }
