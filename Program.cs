@@ -17,6 +17,8 @@ namespace CollectionApp
             usingSortedSet();
             Console.WriteLine("\nPrinting Stack Values");
             usingStack();
+            Console.WriteLine("\nPrinting Queue Values");
+            usingQueue();
 
         }
 
@@ -107,6 +109,21 @@ namespace CollectionApp
             Console.WriteLine("First name to pop : " + stack.Pop());
             Console.WriteLine("Second name to peek : " + stack.Peek());
             Console.WriteLine("Second name to pop : " + stack.Pop());
+
+        }
+        static void usingQueue()
+        {
+            //Allows duplicate and Follows First in First Out Approach
+            Queue<string> queue = new Queue<string>();
+            queue.Enqueue("maruf");
+            queue.Enqueue("arman");
+            queue.Enqueue("foysal");
+            queue.Enqueue("nijam");
+
+            Console.WriteLine("First name to peek : " + queue.Peek());
+            Console.WriteLine("First name to deQueue : " + queue.Dequeue());
+            Console.WriteLine("Second name to peek : " + queue.Peek());
+            Console.WriteLine("Second name to deQueue : " + queue.Dequeue());
 
         }
     }
