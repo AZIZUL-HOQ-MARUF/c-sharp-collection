@@ -1,0 +1,11 @@
+E:\DotNet\CollectionApp\bin\Debug\netcoreapp2.2\CollectionApp.deps.json
+E:\DotNet\CollectionApp\bin\Debug\netcoreapp2.2\CollectionApp.runtimeconfig.json
+E:\DotNet\CollectionApp\bin\Debug\netcoreapp2.2\CollectionApp.runtimeconfig.dev.json
+E:\DotNet\CollectionApp\bin\Debug\netcoreapp2.2\CollectionApp.dll
+E:\DotNet\CollectionApp\bin\Debug\netcoreapp2.2\CollectionApp.pdb
+E:\DotNet\CollectionApp\obj\Debug\netcoreapp2.2\CollectionApp.csprojAssemblyReference.cache
+E:\DotNet\CollectionApp\obj\Debug\netcoreapp2.2\CollectionApp.csproj.CoreCompileInputs.cache
+E:\DotNet\CollectionApp\obj\Debug\netcoreapp2.2\CollectionApp.AssemblyInfoInputs.cache
+E:\DotNet\CollectionApp\obj\Debug\netcoreapp2.2\CollectionApp.AssemblyInfo.cs
+E:\DotNet\CollectionApp\obj\Debug\netcoreapp2.2\CollectionApp.dll
+E:\DotNet\CollectionApp\obj\Debug\netcoreapp2.2\CollectionApp.pdb
