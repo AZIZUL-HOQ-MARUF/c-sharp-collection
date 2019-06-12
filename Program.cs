@@ -9,7 +9,7 @@ namespace CollectionApp
         {
             Console.WriteLine("Printing List Values");
             usingList();
-            
+
             Console.WriteLine("\nPrinting SortedList Key and Values");
             usingSortedList();
 
@@ -27,6 +27,12 @@ namespace CollectionApp
 
             Console.WriteLine("\nPrinting LinkedList Values");
             usingLinkedList();
+
+            Console.WriteLine("\nPrinting Dictionary Values");
+            usingDictionary();
+
+            Console.WriteLine("\nPrinting SortedDictionary Values");
+            usingSortedDictionary();
 
         }
 
@@ -160,8 +166,39 @@ namespace CollectionApp
             {
                 Console.WriteLine(names);
             }
+        }
+        static void usingDictionary()
+        {
+            //Use Hashtable Concept
+            //Stores Key value pair
+            //Doesn't Allow duplicate keys
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("1","Oil");
+            dictionary.Add("2","Shampoo");
+            dictionary.Add("3","Lotion");
+            dictionary.Add("4","Face Wash");
 
+            foreach (KeyValuePair<string,object> item in dictionary)
+            {
+                Console.WriteLine(item.Key+" - "+ item.Value);
+            }
+        }
+        static void usingSortedDictionary()
+        {
+            //Use Hashtable Concept
+            //Stores Key value pair
+            //Doesn't Allow duplicate keys
+            //Sort ascending
+            SortedDictionary<string, object> sortedDictionary = new SortedDictionary<string, object>();
+            sortedDictionary.Add("1","Oil");
+            sortedDictionary.Add("3","Lotion");
+            sortedDictionary.Add("4","Face Wash");
+            sortedDictionary.Add("2","Shampoo");
 
+            foreach (KeyValuePair<string,object> item in sortedDictionary)
+            {
+                Console.WriteLine(item.Key+" - "+ item.Value);
+            }
         }
     }
 }
